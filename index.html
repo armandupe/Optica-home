@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="build/css/normalize.css">
   <link rel="stylesheet" href="build/css/styles.min.css">
   <link rel="stylesheet" href="build/css/fonts.css">
-  <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/418d7da2bc/UntitledProject/style.css"> -->
   <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <link rel="stylesheet" type="text/css" href="src/js/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="src/js/slick-1.8.1/slick/slick-theme.css"/>
  </head>
  <body>  
   <header class="header">
@@ -25,11 +26,11 @@
           <p>Контактные линзы <span class="header-contacts__dot"></span> Цветные линзы <span class="header-contacts__dot"></span> Средства ухода</p>
           <p>Готовые очки <span class="header-contacts__dot"></span> Оправы для детей <span class="header-contacts__dot"></span> Очки на заказ</p>
         </div>
-        <div class="header-contacts__address">
-           <a href=""><span class="icon-location"></span> Наши адреса</a> 
+        <div class="header-contacts__address"> 
+          <a href=""><img src="src/images/header/map-marker-green.svg" alt="">Наши адреса</a> 
         </div>
         <div class="header-contacts__phone">
-          <span class="icon-phone"></span><a href="">+7 (8412) <b>44-12-18</b></a> 
+          <a href=""><img src="src/images/header/phone-green.svg" alt=""> +7 (8412) <b>44-12-18</b></a> 
         </div>  
       </div>
       <nav class="header-nav">
@@ -38,14 +39,28 @@
           <li><a href="">Продукция</a></li>
           <li><a href="">Новости и Акции</a></li>
           <li><a href="">Отзывы клиентов</a></li>
-          <li><a href="">Вопрос-Ответ</a></li>
+          <li><a href="">Вопрос - Ответ</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main">
-    <div class="slider"></div>
+    <div class="slider">
+      <div class="slider__slide">
+        <img src="src/images/slider/background_1.jpg" alt="Картинка слайдера 1">
+        <div class="slider__info">
+          <span>c 3 по 9 июля пройдите проверку зрения</span>
+          <h2>БЕСПЛАТНО</h2>
+          <span>в любом из наших салонов</span>
+        </div>
+        <div class="slick-dots"></div>
+        <div class="slick-dots"></div>
+        <div class="slick-dots"></div>
+      </div>
+      <div class="slider__slide"><img src="src/images/slider/background_2.jpg" alt="Картинка слайдера 2"></div>
+      <div class="slider__slide"><img src="src/images/slider/background_3.jpg" alt="Картинка слайдера 3"></div>
+    </div>
     <div class="features">
       <h2>Наши преимущества</h2>
       <div class="features__feature">
@@ -158,5 +173,18 @@
       </div>
     </div>
   </footer>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="src/js/slick-1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,
+        dots: true,
+        speed: 300
+      });
+    });
+  </script>
  </body>
 </html>
