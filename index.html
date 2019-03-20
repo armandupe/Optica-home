@@ -5,24 +5,34 @@
   <title>Оптика</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="shortcut icon" type="images/png" href="src/images/favicon.png"> -->
+  <link rel="stylesheet" href="build/css/normalize.css">
   <link rel="stylesheet" href="build/css/styles.min.css">
-  <!-- <link rel="stylesheet" href="build/css/fonts.css"> -->
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <link rel="stylesheet" href="build/css/fonts.css">
+  <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/418d7da2bc/UntitledProject/style.css"> -->
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
  </head>
  <body>  
   <header class="header">
     <div class="header__header-container">
-      <div class="header__contacts">
-        <div class="header__main-logo">
-          <img src="src/images/header/logo.svg" alt="Оптика">
-          <h1>ОПТИКА</h1>
+      <div class="header-contacts">
+        <div class="header-main-logo">
+          <a href="">
+            <img src="src/images/header/шар.svg" alt="Оптика">
+            <h1>ОПТИКА</h1>
+          </a>
         </div>
-        <p>Контактые линзы <span></span> Цветные линзы <span></span> Средства ухода <span></span></p>
-        <p>Готовые очки <span></span> Оправы для детей <span></span> Очки на заказ <span></span></p>
-        <a href="">Наши адреса</a>
-        <a href="">+ 7 (8412) <b>44-12-18</b></a>   
+        <div class="header-contacts__product-list">
+          <p>Контактные линзы <span class="header-contacts__dot"></span> Цветные линзы <span class="header-contacts__dot"></span> Средства ухода</p>
+          <p>Готовые очки <span class="header-contacts__dot"></span> Оправы для детей <span class="header-contacts__dot"></span> Очки на заказ</p>
+        </div>
+        <div class="header-contacts__address">
+           <a href=""><span class="icon-location"></span> Наши адреса</a> 
+        </div>
+        <div class="header-contacts__phone">
+          <span class="icon-phone"></span><a href="">+7 (8412) <b>44-12-18</b></a> 
+        </div>  
       </div>
-      <nav class="header__nav">
+      <nav class="header-nav">
         <ul>
           <li><a href="">О нас</a></li>
           <li><a href="">Продукция</a></li>

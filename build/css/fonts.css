@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("src/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("src/fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal; 
+} 
+
+ @font-face {
+    font-family: "Roboto";
+    src: url("src/fonts/Roboto/Roboto-Light.ttf") format("ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "NotoSerif";
+    src: url("src/fonts/Noto_Serif/NotoSerif-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSerif";
+    src: url("src/fonts/Noto_Serif/NotoSerif-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+

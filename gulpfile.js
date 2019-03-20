@@ -5,11 +5,7 @@ var gulp = require("gulp");
     concat = require("gulp-concat"), // Объединение файлов - конкатенация
     uglify = require("gulp-uglify"), // Минимизация javascript
     rename = require("gulp-rename"); // Переименование файлов
-
-// gulp.task("html", function() {
-//     return gulp.src("src/*.html")
-//     .pipe(gulp.dest("build"));
-// });
+    
 
 gulp.task("less", function() {
     return gulp.src(['src/less/styles.less', 'src/less/media.less'])
@@ -21,7 +17,7 @@ gulp.task("less", function() {
          }))
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest("build/css"));
+        .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("scripts", function() {
