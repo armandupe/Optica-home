@@ -7,7 +7,7 @@
   <!-- <link rel="shortcut icon" type="images/png" href="src/images/favicon.png"> -->
   <link rel="stylesheet" href="build/css/styles.min.css">
   <!-- <link rel="stylesheet" href="build/css/fonts.css"> -->
-  
+  <script src='https://www.google.com/recaptcha/api.js'></script>
  </head>
  <body>  
   <header class="header">
@@ -34,36 +34,119 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main class="main">
     <div class="slider"></div>
     <div class="features">
       <h2>Наши преимущества</h2>
       <div class="features__feature">
-        <figure>
-          <img src="" alt="Новинки">
-          <figcaption>Последние новинки<br> контактной коррекции</figcaption>
-        </figure>
+        <img src="src/images/features/advantages_new.svg" alt="Новинки">
+        <p>Последние новинки<br> контактной коррекции</p>
       </div>
       <div class="features__feature">
-        <figure>
-          <img src="" alt="Скидки">
-          <figcaption>Скидки постоянным<br> покупателям</figcaption>
-        </figure>
+        <img src="src/images/features/advantages_discount.svg" alt="Скидки">
+        <p>Скидки постоянным<br> покупателям</p>
       </div>
       <div class="features__feature">
-        <figure>
-          <img src="" alt="Крупнейший ритейлер">
-          <figcaption>Крупнейший ритейлер<br> линз в регионе</figcaption>
-        </figure> 
+        <img src="src/images/features/advantages_lens.svg" alt="Крупнейший ритейлер">
+        <p>Крупнейший ритейлер<br> линз в регионе</p>
       </div>
       <div class="features__feature">
-        <figure>
-          <img src="" alt="Проверка зрения">
-          <figcaption>Возможность пройти<br> проверку зрения</figcaption>
-        </figure>
+        <img src="src/images/features/advantages_check.svg" alt="Проверка зрения">
+        <p>Возможность пройти<br> проверку зрения</p>  
+      </div>
+    </div>
+    <div class="products">
+      <h2>Мы предлагаем</h2>
+      <div class="products__products-container">
+        <div class="products__product">
+          <img src="src/images/products/линзы_1.jpg" alt="Линзы">
+            <h3>Линзы</h3>
+            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        </div>
+        <div class="products__product"></div>
+        <div class="products__product"></div>
+        <div class="products__product"></div>
+        <div class="products__product"></div>
+        <div class="products__product"></div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about__img"><img src="src/images/about/девушка.jpg" alt="Девушка"></div>
+      <div class="about__info">
+        <h2>О нас</h2>
+        <p>Мы любим своих клиентов, поэтому приятно<br>
+           удивим Вас качеством сервиса, постоянно<br>
+           обновляющимся ассортиментом оправ,<br>
+           солнцезащитных очков и линз по низким<br>
+           ценам. У нас Вы гарантированно сможете<br>
+           подобрать и купить очки, проверить зрение,<br>
+           выбрать подходящие линзы и аксессуары<br>
+           к ним.
+         </p>
+         <button>Подробнее</button>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="facts__facts-container">
+        <div class="facts__fact">
+          <h3>17 лет</h3>
+          <p>наша компания<br>на оптическом рынке</p>
+        </div>
+        <div class="facts__fact">
+          <h3>3000</h3>
+          <p>наименований<br>товаров</p>
+        </div>
+        <div class="facts__fact">
+          <h3>5 млн</h3>
+          <p>проданных<br>контактных линз</p>
+        </div>
+      </div>
+    </div>
+    <div class="time-to-buy"><img src="src/images/buy/ШБ.jpg" alt="Пора купить линзы!"></div>
+    <div class="feedback">
+      <div class="feedback__form">
+        <form action="">
+          <h2>Задайте вопрос</h2>
+          <input type="text" placeholder="Ваше имя *">
+          <input type="text" placeholder="Ваш контактный телефон или e-mail">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Текст сообщения *"></textarea>
+          <div class="g-recaptcha" data-sitekey="6LepjAsTAAAAAFZqccY0ZiGqc3XEd3YNxo8cHsHX"></div>
+          <input type="checkbox" name="personal-data" value="agree"> Я соглашаюсь на обработку<br>персональных данных
+          <input type="submit" value="Отправить">
+        </form>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__footer-container">
+      <div class="footer__contacts">
+        <img src="src/images/footer/лого.jpg" alt="Лого Оптика">
+        <ul>
+          <li>Телефон: +7 (8412) 44-12-18</li>
+          <li>E-mail: optica58@list.ru</li>
+          <li><a href="">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div class="footer__about-products-news">
+        <ul>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Продукция</a></li>
+          <li><a href="">Новости и акции</a></li>
+        </ul>
+      </div>
+      <div class="footer__feedbacks-faq-contacts">
+        <ul>
+          <li><a href="">Отзывы клиентов</a></li>
+          <li><a href="">Вопрос-Ответ</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработка сайта</span>
+        <img src="src/images/footer/лого_onlinebees.jpg" alt="Оnlinebees Лого">
+        <a href="https://www.onlinebees.ru">onlinebees.ru</a>
+      </div>
+    </div>
+  </footer>
  </body>
 </html>
