@@ -100,35 +100,35 @@
     <div class="products">
       <h2>Мы предлагаем</h2>
       <div class="products__products-container">
-        <div class="products__product">
-            <img src="src/images/products/линзы_1.jpg" alt="Линзы">
-            <h3>Линзы</h3>
-            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        <div id="abc" class="products__product">
+            <img id="product-image-hover1" src="src/images/products/линзы_1.jpg" alt="Линзы">
+            <h3><a id="product-title-animate1" href="">Линзы</a></h3>
+            <p id="product-paragraph-animate1">Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
         <div class="products__product">
             <img src="src/images/products/очки.jpg" alt="Линзы">
-            <h3>Очки</h3>
-            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+            <h3><a id="product-title-animate2" href="">Очки</a></h3>
+            <p id="product-paragraph-animate2">Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
         <div class="products__product">
             <img src="src/images/products/уход.jpg" alt="Линзы">
-            <h3>Средства ухода</h3>
-            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+            <h3><a id="product-title-animate3" href="">Средства ухода</a></h3>
+            <p id="product-paragraph-animate3">Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
         <div class="products__product">
             <img src="src/images/products/аксессуары_2.jpg" alt="Линзы">
-            <h3>Аксессуары</h3>
-            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+            <h3><a id="product-title-animate4" href="">Аксессуары</a></h3>
+            <p id="product-paragraph-animate4">Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
         <div class="products__product">
             <img src="src/images/products/оправы.jpg" alt="Линзы">
-            <h3>Оправы</h3>
-            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+            <h3><a id="product-title-animate5" href="">Оправы</a></h3>
+            <p id="product-paragraph-animate5">Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
         <div class="products__product">
             <img src="src/images/products/другое.jpg" alt="Линзы">
-            <h3>Другое</h3>
-            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+            <h3><a id="product-title-animate6" href="">Другое</a></h3>
+            <p id="product-paragraph-animate6">Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
       </div>
     </div>
@@ -229,6 +229,79 @@
         dots: true,
         speed: 300
       });
+
+      
+      // $('#product-image-hover1').mouseenter(function(){
+      //   $(this).css("opacity", "0.8");
+      // });
+      // $('#abc').mouseleave(function(){
+      //   $('#product-image-hover1').css("opacity", "1");
+      // });
+
+     
+      
+
+
+      $("#product-title-animate1").mouseenter(function(){
+        $("#product-title-animate1").animate({top: '-200px'});
+        $("#product-paragraph-animate1").show('slow');
+      });
+
+      $("#product-paragraph-animate1").click(function(){
+        $("#product-title-animate1").animate({top: '0px'});
+        $("#product-paragraph-animate1").hide();
+       }); 
+
+       $("#product-title-animate2").mouseenter(function(){
+        $("#product-title-animate2").animate({top: '-200px'});
+        $("#product-paragraph-animate2").show('slow');
+      });
+
+      $("#product-paragraph-animate2").click(function(){
+        $("#product-title-animate2").animate({top: '0px'});
+        $("#product-paragraph-animate2").hide();
+       });
+
+       $("#product-title-animate3").mouseenter(function(){
+        $("#product-title-animate3").animate({top: '-200px', left: '-22%'});
+        $("#product-paragraph-animate3").show('slow');
+      });
+
+      $("#product-paragraph-animate3").click(function(){
+        $("#product-title-animate3").animate({top: '0px'});
+        $("#product-paragraph-animate3").hide();
+       });
+
+       $("#product-title-animate4").mouseenter(function(){
+        $("#product-title-animate4").animate({top: '-200px', left: '-14%'});
+        $("#product-paragraph-animate4").show('slow');
+      });
+
+      $("#product-paragraph-animate4").click(function(){
+        $("#product-title-animate4").animate({top: '0px'});
+        $("#product-paragraph-animate4").hide();
+       });
+
+       $("#product-title-animate5").mouseenter(function(){
+        $("#product-title-animate5").animate({top: '-200px'});
+        $("#product-paragraph-animate5").show('slow');
+      });
+
+      $("#product-paragraph-animate5").click(function(){
+        $("#product-title-animate5").animate({top: '0px'});
+        $("#product-paragraph-animate5").hide();
+       });
+
+       $("#product-title-animate6").mouseenter(function(){
+        $("#product-title-animate6").animate({top: '-200px'});
+        $("#product-paragraph-animate6").show('slow');
+      });
+
+      $("#product-paragraph-animate6").click(function(){
+        $("#product-title-animate6").animate({top: '0px'});
+        $("#product-paragraph-animate6").hide();
+       });
+
     });
   </script>
  </body>
