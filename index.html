@@ -7,10 +7,11 @@
   <!-- <link rel="shortcut icon" type="images/png" href="src/images/favicon.png"> -->
   <link rel="stylesheet" href="build/css/normalize.css">
   <link rel="stylesheet" href="build/css/styles.min.css">
-  <link rel="stylesheet" href="build/css/fonts.css">
-  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <!-- <link rel="stylesheet" href="build/css/fonts.css"> -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <link rel="stylesheet" type="text/css" href="src/js/slick-1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="src/js/slick-1.8.1/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
  </head>
  <body>  
   <header class="header">
@@ -58,11 +59,26 @@
         <div class="slick-dots"></div>
         <div class="slick-dots"></div>
       </div>
-      <div class="slider__slide"><img src="src/images/slider/background_2.jpg" alt="Картинка слайдера 2"></div>
-      <div class="slider__slide"><img src="src/images/slider/background_3.jpg" alt="Картинка слайдера 3"></div>
+      <div class="slider__slide">
+        <img src="src/images/slider/background_2.jpg" alt="Картинка слайдера 2">
+        <div class="slider__info">
+          <span>При покупке от 1000 рублей</span>
+          <h2>ВАС ЖДУТ ПОДАРКИ</h2>
+          <span>крем для рук или гель для душа</span>
+        </div>
+      </div>
+      <div class="slider__slide">
+        <img src="src/images/slider/background_3.jpg" alt="Картинка слайдера 3">
+        <div class="slider__info">
+          <span>c 3 по 9 июля пройдите проверку зрения</span>
+          <h2>БЕСПЛАТНО</h2>
+          <span>в любом из наших салонов</span>
+        </div>
+      </div>
     </div>
     <div class="features">
       <h2>Наши преимущества</h2>
+      <div class="features__container">    
       <div class="features__feature">
         <img src="src/images/features/advantages_new.svg" alt="Новинки">
         <p>Последние новинки<br> контактной коррекции</p>
@@ -79,20 +95,41 @@
         <img src="src/images/features/advantages_check.svg" alt="Проверка зрения">
         <p>Возможность пройти<br> проверку зрения</p>  
       </div>
+      </div>
     </div>
     <div class="products">
       <h2>Мы предлагаем</h2>
       <div class="products__products-container">
         <div class="products__product">
-          <img src="src/images/products/линзы_1.jpg" alt="Линзы">
+            <img src="src/images/products/линзы_1.jpg" alt="Линзы">
             <h3>Линзы</h3>
             <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
         </div>
-        <div class="products__product"></div>
-        <div class="products__product"></div>
-        <div class="products__product"></div>
-        <div class="products__product"></div>
-        <div class="products__product"></div>
+        <div class="products__product">
+            <img src="src/images/products/очки.jpg" alt="Линзы">
+            <h3>Очки</h3>
+            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        </div>
+        <div class="products__product">
+            <img src="src/images/products/уход.jpg" alt="Линзы">
+            <h3>Средства ухода</h3>
+            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        </div>
+        <div class="products__product">
+            <img src="src/images/products/аксессуары_2.jpg" alt="Линзы">
+            <h3>Аксессуары</h3>
+            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        </div>
+        <div class="products__product">
+            <img src="src/images/products/оправы.jpg" alt="Линзы">
+            <h3>Оправы</h3>
+            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        </div>
+        <div class="products__product">
+            <img src="src/images/products/другое.jpg" alt="Линзы">
+            <h3>Другое</h3>
+            <p>Очки для нанесения макияжа,<br>очки для плавания с диоптриями, <br>перфорационные очки </p>
+        </div>
       </div>
     </div>
     <div class="about">
@@ -118,7 +155,7 @@
           <p>наша компания<br>на оптическом рынке</p>
         </div>
         <div class="facts__fact">
-          <h3>3000</h3>
+          <h3>3 000</h3>
           <p>наименований<br>товаров</p>
         </div>
         <div class="facts__fact">
@@ -129,23 +166,31 @@
     </div>
     <div class="time-to-buy"><img src="src/images/buy/ШБ.jpg" alt="Пора купить линзы!"></div>
     <div class="feedback">
+      <div class="feedback__container">
       <div class="feedback__form">
         <form action="">
           <h2>Задайте вопрос</h2>
-          <input type="text" placeholder="Ваше имя *">
-          <input type="text" placeholder="Ваш контактный телефон или e-mail">
+          <input type="text" placeholder="Ваше имя *" required>
+          <input type="text" placeholder="Ваш контактный телефон или e-mail" required>
           <textarea name="" id="" cols="30" rows="10" placeholder="Текст сообщения *"></textarea>
           <div class="g-recaptcha" data-sitekey="6LepjAsTAAAAAFZqccY0ZiGqc3XEd3YNxo8cHsHX"></div>
-          <input type="checkbox" name="personal-data" value="agree"> Я соглашаюсь на обработку<br>персональных данных
+          <input id="agree" type="checkbox" name="personal-data" value="">
+          <label for="agree"><span>Я соглашаюсь на обработку</span><br><span>персональных данных</span></label>
           <input type="submit" value="Отправить">
         </form>
+      </div>
       </div>
     </div>
   </main>
   <footer class="footer">
     <div class="footer__footer-container">
       <div class="footer__contacts">
-        <img src="src/images/footer/лого.jpg" alt="Лого Оптика">
+        <div class="header-main-logo header-main-logo_footer">
+          <a href="">
+            <img src="src/images/header/шар.svg" alt="Оптика">
+            <h2>ОПТИКА</h2>
+          </a>
+        </div>
         <ul>
           <li>Телефон: +7 (8412) 44-12-18</li>
           <li>E-mail: optica58@list.ru</li>
@@ -162,13 +207,13 @@
       <div class="footer__feedbacks-faq-contacts">
         <ul>
           <li><a href="">Отзывы клиентов</a></li>
-          <li><a href="">Вопрос-Ответ</a></li>
+          <li><a href="">Вопрос - Ответ</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </div>
       <div class="footer__copyright">
         <span>Разработка сайта</span>
-        <img src="src/images/footer/лого_onlinebees.jpg" alt="Оnlinebees Лого">
+        <img src="src/images/footer/лого_onlinebees.png" alt="Оnlinebees Лого">
         <a href="https://www.onlinebees.ru">onlinebees.ru</a>
       </div>
     </div>
@@ -180,7 +225,7 @@
   <script>
     $(document).ready(function(){
       $('.slider').slick({
-        autoplay: true,
+        autoplay: false,
         dots: true,
         speed: 300
       });
