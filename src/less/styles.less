@@ -13,7 +13,6 @@ body {
 }
 
 .header__header-container {
-    outline: 2px solid red;
     position: relative;
     // width: 80%;
     max-width: 1130px;
@@ -95,6 +94,7 @@ body {
         position: relative;
         top: -10px;
         left: -20px;
+        
 
         &:hover {
             cursor: pointer;
@@ -125,6 +125,7 @@ body {
         position: relative;
         top: -2px;
         left: -40px;
+        
 
         &:hover {
             cursor: pointer;
@@ -186,6 +187,10 @@ body {
     display: none;
     background: url(../images/header/menu.svg) no-repeat;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     ul {
         width: 150px;
         position: relative;
@@ -213,6 +218,10 @@ body {
             }
         }
     }
+}
+
+.header-nav-burger-menu__ul {
+    display: none;
 }
 
 .slider {
@@ -284,6 +293,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 
 .features__feature {
