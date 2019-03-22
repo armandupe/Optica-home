@@ -1,9 +1,12 @@
+// * {outline: 2px solid red;}
+@outlineRed: 2px solid red;
+
 body {
     width: 100%;
     max-width: 1920px;
     min-width: 320px;
     box-sizing: border-box;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .header {
@@ -226,7 +229,7 @@ body {
 
 .slider {
     width: 100%;
-
+   
 
     img {
         max-width: 100%;
@@ -240,17 +243,19 @@ body {
     min-height: 680px;
     height: auto;
     z-index: 7;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
 }
 
 .slider__info {
     width: 935px;
     height: auto;
-    background-color:#7648A0;
+    background-color: rgba(118, 72, 160, .8);
     border-radius: 7px;
     color: #fff;
     font-family: 'Noto Serif', serif;
     font-weight: 700;
-    opacity: .8;
     position: absolute;
     top: 57%;
     left: 26%;
@@ -279,13 +284,20 @@ body {
 
 .features {
     font-family: 'Noto Serif', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 
     h2 {
+        width: auto; //first
         font-size: 48px;
         font-weight: 700;
         position: relative;
-        top: 45px;
-        left: 36%;
+        top: 15px;
+        padding-left: 7px;
+        margin-bottom: 8px;
     }
 }
 
@@ -321,13 +333,17 @@ body {
 .products {
     font-family: 'Noto Serif', serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h2 {
+        width: auto; // second
         font-size: 48px;
         font-weight: 700;
         position: relative;
         top: 5px;
-        left: 40%;
         padding-bottom: 40px;
     }
 }
@@ -335,25 +351,30 @@ body {
 .products__products-container {
     display: flex;
     // width: 1920px;
-    margin-right: -17px;
+    // margin-right: -17px; //third
     // padding: 5px;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 
 
 .products__product {
-    width: 33%;
-    height: auto;
+    width: calc(100%/3);
+    height: 100%;
     position: relative;
     color: #fff;
-    margin-bottom: -5.1%;
+    margin: 0;
+    padding: 0;
     
     
     img {
         max-width: 100%;
         height: auto;
         transition: .5s;
+        margin: 0;
+        padding: 0;
 
         &:hover {
             cursor: pointer;
@@ -368,6 +389,9 @@ body {
         top: -100px;
         left: 42%;
         font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
         
 
         a {
@@ -503,7 +527,7 @@ body {
 .time-to-buy {
     img {
         padding-top: 51px;
-        padding-left: 15px;
+        // padding-left: 15px; //fourth
         max-width: 100%;
         height: auto;
         padding-bottom: 120px;
@@ -520,7 +544,9 @@ body {
 
 .feedback__container {
     position: relative;
-    left: 51%;
+    // left: 51%;
+    display: flex;
+    justify-content: flex-end;
     padding-top: 80px;
     padding-bottom: 85px;
 }
@@ -531,6 +557,9 @@ body {
 }
 
 .feedback__form {
+    position: relative;
+    top: 8px;
+    left: -375px;
     width: 510px;
     height: 555px;
     background-color: rgba(111, 54, 154 ,0.8);
