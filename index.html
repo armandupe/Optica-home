@@ -254,65 +254,74 @@
      });
       
 
+    //  $(window).on('resize', function(){
+    //   var win = $(this);
+    //   if (win.width() <= 1024) {
+    //     $("#product-title-animate1").mouseenter(function(){
+    //       $("#product-title-animate1").animate({top: '-13.5vw'});
+    //   });
+    //   }
+    //  });
 
       $("#product-title-animate1").mouseenter(function(){
-        $("#product-title-animate1").animate({top: '-200px'});
-        $("#product-paragraph-animate1").show('slow');
+          $(this).animate({top: '-10.5vw'});
+          $("#product-paragraph-animate1").fadeIn('slow');
       });
 
       $("#product-paragraph-animate1").click(function(){
-        $("#product-title-animate1").animate({top: '0px'});
-        $("#product-paragraph-animate1").hide();
+         $("#product-title-animate1").animate({top: '0px'});
+         $("#product-paragraph-animate1").fadeOut(200);
        }); 
 
+
        $("#product-title-animate2").mouseenter(function(){
-        $("#product-title-animate2").animate({top: '-200px'});
-        $("#product-paragraph-animate2").show('slow');
+        $(this).animate({top: '-10.5vw'});
+        $("#product-paragraph-animate2").fadeIn('slow');
       });
 
       $("#product-paragraph-animate2").click(function(){
         $("#product-title-animate2").animate({top: '0px'});
-        $("#product-paragraph-animate2").hide();
+        $("#product-paragraph-animate2").fadeOut(200);
        });
 
        $("#product-title-animate3").mouseenter(function(){
-        $("#product-title-animate3").animate({top: '-200px', left: '-22%'});
-        $("#product-paragraph-animate3").show('slow');
+        $(this).animate({top: '-10.5vw'});
+        $("#product-paragraph-animate3").fadeIn('slow');
       });
 
       $("#product-paragraph-animate3").click(function(){
         $("#product-title-animate3").animate({top: '0px'});
-        $("#product-paragraph-animate3").hide();
+        $("#product-paragraph-animate3").fadeOut(200);
        });
 
        $("#product-title-animate4").mouseenter(function(){
-        $("#product-title-animate4").animate({top: '-200px', left: '-14%'});
-        $("#product-paragraph-animate4").show('slow');
+        $(this).animate({top: '-10.5vw'});
+        $("#product-paragraph-animate4").fadeIn('slow');
       });
 
       $("#product-paragraph-animate4").click(function(){
         $("#product-title-animate4").animate({top: '0px'});
-        $("#product-paragraph-animate4").hide();
+        $("#product-paragraph-animate4").fadeOut(200);
        });
 
        $("#product-title-animate5").mouseenter(function(){
-        $("#product-title-animate5").animate({top: '-200px'});
-        $("#product-paragraph-animate5").show('slow');
+        $(this).animate({top: '-10.5vw'});
+        $("#product-paragraph-animate5").fadeIn('slow');
       });
 
       $("#product-paragraph-animate5").click(function(){
         $("#product-title-animate5").animate({top: '0px'});
-        $("#product-paragraph-animate5").hide();
+        $("#product-paragraph-animate5").fadeOut(200);
        });
 
        $("#product-title-animate6").mouseenter(function(){
-        $("#product-title-animate6").animate({top: '-200px'});
-        $("#product-paragraph-animate6").show('slow');
+        $(this).animate({top: '-10.5vw'});
+        $("#product-paragraph-animate6").fadeIn('slow');
       });
 
       $("#product-paragraph-animate6").click(function(){
         $("#product-title-animate6").animate({top: '0px'});
-        $("#product-paragraph-animate6").hide();
+        $("#product-paragraph-animate6").fadeOut(200);
        });
 
     });

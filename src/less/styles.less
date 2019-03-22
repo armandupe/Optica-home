@@ -339,20 +339,18 @@ body {
     flex-direction: column;
 
     h2 {
-        width: auto; // second
+        width: auto; 
         font-size: 48px;
         font-weight: 700;
         position: relative;
         top: 5px;
-        padding-bottom: 40px;
+        padding: 3px 0 0 15px;
+        margin-bottom: 72px;
     }
 }
 
 .products__products-container {
     display: flex;
-    // width: 1920px;
-    // margin-right: -17px; //third
-    // padding: 5px;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -367,6 +365,11 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     
     
     img {
@@ -384,10 +387,9 @@ body {
     }
 
     h3 {
-        width: 40%;
+        width: auto;
         position: relative;
-        top: -100px;
-        left: 42%;
+        top: -45px;
         font-size: 30px;
         margin: 0;
         padding: 0;
@@ -398,8 +400,6 @@ body {
             text-decoration: none;
             color: #fff;
             position: relative;
-           
-            width: 50%;
 
             &:hover {
                 cursor: pointer;
@@ -412,26 +412,39 @@ body {
     }
 
     p {
+        // align-self: center;
         display: none;
-        width: 50%;
+        width: auto;
         font-family: 'Roboto', sans-serif;
         text-align: center;
         font-size: 16px;
         line-height: 1.5;
         position: absolute;
-        top: 160px;
-        left: 27%;
+        // top: 160px;
+        // left: 27%;
         
     }
 }
 
+#product-title-animate2 {
+    padding-left: 10px;
+}
+
 #product-title-animate3 {
-    left: -25%;
+    padding-left: 20px;
 }
 
 #product-title-animate4 {
-    left: -14%;
+    top: 5px;
+    padding-left: 8px;
 }
+
+#product-title-animate5 {
+    top: 5px;
+    padding-left: 13px;
+}
+
+
 
 .about {
     display: flex;
@@ -439,8 +452,11 @@ body {
 }
 
 .about__img {
+// outline: @outlineRed;
+    // width: 50%;
 
     img {
+        // outline: @outlineRed;
         max-width: 100%;
         height: auto;
         position: relative;
@@ -450,28 +466,33 @@ body {
 }
 
 .about__info {
+// outline: @outlineRed;
+    // width: 50%;
 
     h2 {
+        // outline: @outlineRed;
+        width: 50%;
         font-family: 'Noto Serif', serif;
         font-size: 48px;
         font-weight: 700;
         position: relative;
-        top: 47px;
-        left: 46px;
+        top: 50px;
+        left: 44px;
     }
 
     p {
+        // outline: @outlineRed;
         font-family: 'Roboto', sans-serif;
         line-height: 1.5;
         font-size: 24px;
         position: relative;
-        top: 38px;
+        top: 42px;
         left: 50px;
     }
 
     button {
         position: relative;
-        top: 50px;
+        top: 55px;
         left: 10%;
         color: #fff;
         background: #1A9F29;
