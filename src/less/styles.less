@@ -452,11 +452,8 @@ body {
 }
 
 .about__img {
-// outline: @outlineRed;
-    // width: 50%;
 
     img {
-        // outline: @outlineRed;
         max-width: 100%;
         height: auto;
         position: relative;
@@ -466,11 +463,8 @@ body {
 }
 
 .about__info {
-// outline: @outlineRed;
-    // width: 50%;
 
     h2 {
-        // outline: @outlineRed;
         width: 50%;
         font-family: 'Noto Serif', serif;
         font-size: 48px;
@@ -481,24 +475,24 @@ body {
     }
 
     p {
-        // outline: @outlineRed;
         font-family: 'Roboto', sans-serif;
         line-height: 1.5;
         font-size: 24px;
         position: relative;
-        top: 42px;
+        top: 18px;
         left: 50px;
     }
 
     button {
         position: relative;
-        top: 55px;
+        top: 33px;
         left: 10%;
         color: #fff;
         background: #1A9F29;
         border-radius: 6px;
         border: none;
-        padding: 3.6% 12%;
+        padding: 3.6% 3%;
+        width: 41.5%;
         font-size: 18px;
         font-weight: 300;
 
@@ -509,10 +503,17 @@ body {
     }
 }
 
+.about__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .facts {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background: url(../images/facts/очки.jpg) no-repeat;
+    // background-size: contain;
 }
 
 .facts__facts-container {
