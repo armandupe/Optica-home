@@ -1,12 +1,16 @@
 // Переменные
 @primary-font-color: #555555;
 
+html {overflow-x: hidden;}
+
 body {
     width: 100%;
+    margin: 0 auto;
     max-width: 1920px;
     min-width: 320px;
     box-sizing: border-box;
     overflow-x: hidden;
+    position: relative;
 }
 
 .header {
@@ -90,7 +94,7 @@ body {
     top: 32px;
     left: 219px;
     letter-spacing: .1px;
-
+    
     a {
         color: #656565;
         position: relative;
@@ -120,7 +124,7 @@ body {
     top: 32px;
     left: 315px;
     letter-spacing: .1px;
-
+    
     a {
         text-decoration: none;
         color: #656565;
@@ -619,6 +623,7 @@ body {
 
             &:focus {
                 box-shadow: inset 1px 1px 10px 1px rgb(111, 54, 154);
+                outline: none;
             }
         }
 
@@ -651,6 +656,7 @@ body {
             padding-left: 10px;
             overflow: hidden;
             resize: none;
+            outline: none;
 
             &:focus {
                 box-shadow: inset 1px 1px 10px 1px rgb(111, 54, 154);
@@ -683,10 +689,12 @@ body {
             top: 25px;
             left: 2%;
             line-height: .5;
+            
 
             span {
                 display: block;
                 margin-bottom: -4px;
+                
             }
 
             &::before {
