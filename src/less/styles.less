@@ -1,5 +1,5 @@
-// * {outline: 2px solid red;}
-@outlineRed: 2px solid red;
+// Переменные
+@primary-font-color: #555555;
 
 body {
     width: 100%;
@@ -17,7 +17,6 @@ body {
 
 .header__header-container {
     position: relative;
-    // width: 80%;
     max-width: 1130px;
 
 }
@@ -171,12 +170,16 @@ body {
 
     a {
         text-decoration: none;
-        color: #000;
+        color: @primary-font-color;
         transition: .2s;
 
         &:hover {
             cursor: pointer;
             color: #7445A0;
+        }
+
+        &:active {
+            color: rgb(80, 21, 134);
         }
     }
 }
@@ -243,9 +246,6 @@ body {
     min-height: 680px;
     height: auto;
     z-index: 7;
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
 }
 
 .slider__info {
@@ -291,13 +291,14 @@ body {
     
 
     h2 {
-        width: auto; //first
+        width: auto;
         font-size: 48px;
         font-weight: 700;
         position: relative;
         top: 15px;
         padding-left: 7px;
         margin-bottom: 8px;
+        color: @primary-font-color;
     }
 }
 
@@ -327,6 +328,7 @@ body {
         text-align: center;
         font-size: 24px;
         line-height: 1.6;
+        color: @primary-font-color;
     }
 }
 
@@ -346,6 +348,7 @@ body {
         top: 5px;
         padding: 3px 0 0 15px;
         margin-bottom: 72px;
+        color: @primary-font-color;
     }
 }
 
@@ -356,6 +359,14 @@ body {
     padding: 0;
 }
 
+.product__background-shadow {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    max-width: 100%;
+    height: auto;
+    background: rgb(60, 60, 60);
+}
 
 
 .products__product {
@@ -378,10 +389,10 @@ body {
         transition: .5s;
         margin: 0;
         padding: 0;
+        
 
         &:hover {
             cursor: pointer;
-            opacity: .9;
         }
 
     }
@@ -412,7 +423,6 @@ body {
     }
 
     p {
-        // align-self: center;
         display: none;
         width: auto;
         font-family: 'Roboto', sans-serif;
@@ -420,14 +430,11 @@ body {
         font-size: 16px;
         line-height: 1.5;
         position: absolute;
-        // top: 160px;
-        // left: 27%;
-        
     }
 }
 
 #product-title-animate2 {
-    padding-left: 10px;
+    padding-left: 0;
 }
 
 #product-title-animate3 {
@@ -472,6 +479,7 @@ body {
         position: relative;
         top: 50px;
         left: 44px;
+        color: @primary-font-color;
     }
 
     p {
@@ -481,6 +489,7 @@ body {
         position: relative;
         top: 18px;
         left: 50px;
+        color: @primary-font-color;
     }
 
     button {
@@ -499,6 +508,10 @@ body {
         &:hover {
             cursor: pointer;
             background: #00820D;
+        }
+
+        &:active {
+            background: rgb(3, 110, 14);
         }
     }
 }
@@ -543,6 +556,7 @@ body {
         margin-left: 5px;
         line-height: 1.5;
         padding-bottom: 90px;
+        color: @primary-font-color;
     }
 }
 
@@ -709,6 +723,11 @@ body {
                 cursor: pointer;
                 background: #00820D;
             }
+
+            &:active {
+                background: rgb(3, 110, 14);
+            }
+            
         }
     }
 

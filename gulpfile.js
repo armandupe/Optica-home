@@ -1,10 +1,10 @@
 var gulp = require("gulp");
-    less = require("gulp-less"), // переводит less в CSS
-    cssnano = require("gulp-cssnano"), // Минимизация CSS
-    autoprefixer = require('gulp-autoprefixer'), // Проставлет вендорные префиксы в CSS для поддержки старых браузеров
-    concat = require("gulp-concat"), // Объединение файлов - конкатенация
-    uglify = require("gulp-uglify"), // Минимизация javascript
-    rename = require("gulp-rename"); // Переименование файлов
+    less = require("gulp-less"), 
+    cssnano = require("gulp-cssnano"),
+    autoprefixer = require('gulp-autoprefixer'),
+    concat = require("gulp-concat"), 
+    uglify = require("gulp-uglify"), 
+    rename = require("gulp-rename"); 
     
 
 gulp.task("less", function() {
