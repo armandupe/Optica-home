@@ -30,7 +30,14 @@ gulp.task("compress", () =>
 
 gulp.task("less", function() {
   return gulp
-    .src(["src/less/styles.less", "src/less/media.less"])
+    .src([
+      "src/less/slick-theme.less",
+      "src/less/normalize.less",
+      "src/less/fonts.less",
+      "src/less/styles.less",
+      // "src/less/media.less",
+      "src/less/slick.less"
+    ])
     .pipe(concat("styles.less"))
     .pipe(less())
     .pipe(
