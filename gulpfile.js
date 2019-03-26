@@ -35,7 +35,6 @@ gulp.task("less", function() {
       "src/less/normalize.less",
       "src/less/fonts.less",
       "src/less/styles.less",
-      // "src/less/media.less",
       "src/less/slick.less"
     ])
     .pipe(concat("styles.less"))
