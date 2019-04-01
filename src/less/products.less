@@ -1,0 +1,181 @@
+.products {
+  font-family: "Noto Serif", serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.products__title {
+  width: auto;
+  font-size: 48px;
+  font-weight: 700;
+  color: @primary-font-color;
+  @media (max-width: 480px) {
+    font-size: 40px;
+  }
+  @media @mobile {
+    font-size: 36px;
+  }
+}
+
+.products__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.products__goods-background {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+  background: rgb(60, 60, 60);
+}
+
+.products__goods {
+  width: calc(100% / 3);
+  height: 100%;
+  position: relative;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  @media @desktop {
+    width: calc(100% / 2);
+  }
+  @media @tablet {
+    width: 100%;
+  }
+}
+
+.products__goods-img {
+  max-width: 100%;
+  height: auto;
+  transition-duration: 0.5s;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.products__goods-description {
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  position: absolute;
+  @media (max-width: 1600px) {
+    width: auto;
+  }
+  @media @tablet {
+    width: 50%;
+  }
+  @media (max-width: 480px) {
+    width: 80%;
+  }
+  @media @mobile {
+    width: auto;
+    font-size: 14px;
+  }
+  @media @mobile-small {
+    padding-top: 5px;
+  }
+}
+
+.products__goods-name {
+  width: auto;
+  position: relative;
+  top: -2vw;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  transition-duration: 0.5s;
+  @media @tablet {
+    top: -3vw;
+  }
+  @media (max-width: 480px) {
+    top: -5vw;
+  }
+  @media @mobile {
+    font-size: 22px;
+  }
+
+  &:hover {
+    top: -10.5vw;
+    @media @desktop {
+      top: -15.5vw;
+    }
+    @media @tablet {
+      top: -26.5vw;
+    }
+    @media (max-width: 720px) {
+      top: -30vw;
+    }
+  }
+}
+
+.products__goods-link {
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.products__goods-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.products__goods-background:hover + .products__goods-content {
+  opacity: 1;
+}
+
+.products__goods-content:hover ~ .products__goods-name {
+  top: -10.5vw;
+  @media @desktop {
+    top: -15.5vw;
+  }
+  @media @tablet {
+    top: -26.5vw;
+  }
+  @media (max-width: 720px) {
+    top: -30vw;
+  }
+}
+
+.products__goods-background:hover ~ .products__goods-name {
+  top: -10.5vw;
+  @media @desktop {
+    top: -15.5vw;
+  }
+  @media @tablet {
+    top: -26.5vw;
+  }
+  @media (max-width: 720px) {
+    top: -30vw;
+  }
+}

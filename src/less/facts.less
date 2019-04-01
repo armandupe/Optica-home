@@ -1,0 +1,42 @@
+.facts {
+  max-width: 100%;
+  height: auto;
+  background: url(../images/facts/очки.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 930px) {
+    background: url(../images/facts/очки_big.jpg) no-repeat;
+    flex-direction: column;
+  }
+}
+
+.facts__details {
+  width: 14%;
+  margin-right: 5%;
+  text-align: center;
+  @media (max-width: 1800px) {
+    width: auto;
+  }
+  @media (max-width: 930px) {
+    margin-right: 0;
+  }
+}
+
+.facts__title {
+  font-family: "Noto Serif", serif;
+  font-size: 78px;
+  color: #7445a0;
+  padding-top: 0.5em;
+}
+
+.facts__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: -70px;
+  margin-left: 5px;
+  line-height: 1.5;
+  padding-bottom: 2em;
+  color: @primary-font-color;
+}
